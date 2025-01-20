@@ -1,4 +1,4 @@
-![ARICHAT](https://i.imgur.com/5KeGY64.png)
+![ARICHAT](https://github.com/kiraririria/arichat/blob/web/assets/images/logo_banner.png)
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/arichat) >>> [GitHub](https://github.com/kiraririria/arichat) >>> [Instruction](https://kiraririria.github.io/arichat/)
 
