@@ -2,60 +2,302 @@
 <html lang="ru" dir="auto" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    <title>Narration Role Play</title>
-    <meta property="og:title" content="ARICHAT" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://kiraririria.github.io/arichat/" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="ARICHAT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arichat Classic - AI-интеграция для Minecraft</title>
+
+    <!-- Open Graph мета-теги -->
+    <meta property="og:title" content="Arichat Classic" />
+    <meta property="og:description" content="Мощная AI-интеграция для Minecraft с поддержкой ролевых взаимодействий" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://[your-username].github.io/arichat-classic/" />
+    <meta property="og:image" content="./assets/images/og-image.png" />
+    <meta property="og:site_name" content="Arichat Classic" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arichat Classic">
+    <meta name="twitter:description" content="AI-интеграция для Minecraft">
+
+    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/images/icon_o.png" type="image/png">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/adaptivesite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Иконка -->
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="header nonselect">
-        <img src="./assets/images/banner2.png" alt="arichat">
-    </div>
-    <div class="main">
+<!-- Навигация -->
+<nav class="navbar">
     <div class="container">
-        <div class="add_bot nonselect">
-            <a class="button ru nonselect" href="https://www.curseforge.com/minecraft/mc-mods/arichat">CurseForge</a>
+        <div class="nav-brand">
         </div>
-    <div class="info">
-        <h1 class="bold">Arichat - Инструкция</h1>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Главная</a></li>
+            <li><a href="#features" class="nav-link">Возможности</a></li>
+            <li><a href="#videos" class="nav-link">Видео</a></li>
+            <li><a href="#wiki" class="nav-link">Документация</a></li>
+            <li><a href="#download" class="nav-link">Скачать</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Меню">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+</nav>
 
-        <p>Arichat — мод, задача которого соединить Minecraft с сайтом Агнаи, который соединяет свой интерфейс с AI-моделями. Если сказать упрощенно, то мод добавляет AI-ролевую функциональность в Minecraft.</p>
+<!-- Герой-секция -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Arichat <span class="highlight">Classic</span></h1>
+            <p class="hero-subtitle">Продвинутая AI-интеграция для Minecraft, открывающая новые горизонты ролевых взаимодействий</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">Начать использование</a>
+                <a href="#features" class="btn btn-secondary">Узнать больше</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./assets/images/logo_banner.png" alt="Arichat Classic Banner" class="hero-banner">
+        </div>
+    </div>
+</section>
 
-        <p><strong>Предупреждение:</strong> Arichat — тестовый мод для демонстрации возможностей. Обновление и поддержка мода от автора, скорее всего, будут отсутствовать. Однако не стоит расстраиваться, в инструкции я подробно всё расскажу. Если мод у вас вообще запустится, то разобраться вы сможете.</p>
+<!-- Секция возможностей -->
+<section id="features" class="features">
+    <div class="container">
+        <h2 class="section-title">Основные <span class="highlight">Возможности</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3 class="feature-title">AI-интеграция</h3>
+                <p class="feature-desc">Подключение OpenRouter и KoboldCPP</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3 class="feature-title">Беспрепятственная интеграция</h3>
+                <p class="feature-desc">Работает внутри Minecraft 1.12.2 мода Mappet, соединен с диалоговой системой</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Высокая производительность</h3>
+                <p class="feature-desc">Оптимизированная работа даже на слабых системах</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3 class="feature-title">Гибкая настройка</h3>
+                <p class="feature-desc">Широкие возможности кастомизации настроек, пресетов для ваших карт</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <h2>Итак</h2>
+<!-- Секция видео -->
+<section id="videos" class="videos">
+    <div class="container">
+        <h2 class="section-title">Видео <span class="highlight">Демонстрации</span></h2>
+        <p class="section-subtitle">Посмотрите Arichat Classic в действии</p>
 
-        <ol>
-            <li>Arichat использует "автоматизацию тестирования", таким образом, программа будет управлять драйвером-браузером.
-                <ul>
-                    <li>Вам необходим интернет.</li>
-                    <li>Вам необходим браузер (автор рекомендует установить Chrome, если Arichat не работает с вашим браузером).</li>
-                    <li>В случае ошибки высока вероятность, что драйвер зависнет как процесс. В таком случае вы можете найти его через диспетчер задач, чтобы отключить.</li>
-                    <li>Если всё работает корректно, то управляемый браузер будет хранить такие данные, как: данные сайтов, темы, расширения.</li>
-                    <li>Так как многие сайты имеют в себе рекламу, то автор рекомендует при первом запуске установить бесплатное расширение AdBlock Plus.</li>
-                    <li>Если вы будете использовать браузер без оболочки, то реклама в теории не должна мешать программе, однако такая вероятность есть.</li>
+        <div class="video-grid">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <!-- Замените src на реальные YouTube видео -->
+                    <iframe
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Arichat Classic Ru"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                    <div class="video-info">
+                        <h3 class="video-title">Русская версия</h3>
+                        <p class="video-desc">Обзор основных функций и возможностей мода</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Arichat Classic"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                    <div class="video-info">
+                        <h3 class="video-title">Основное видео</h3>
+                        <p class="video-desc">Руководство и демонстрация работы</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Вики-секция -->
+<section id="wiki" class="wiki">
+    <div class="container">
+        <h2 class="section-title">Документация и <span class="highlight">Инструкции</span></h2>
+
+        <div class="wiki-container">
+            <div class="wiki-sidebar">
+                <div class="wiki-nav">
+                    <h4 class="wiki-nav-title">Содержание</h4>
+                    <ul class="wiki-nav-list">
+                        <li><a href="#install" class="wiki-nav-link active">Установка</a></li>
+                        <li><a href="#config" class="wiki-nav-link">Настройка</a></li>
+                        <li><a href="#usage" class="wiki-nav-link">Использование</a></li>
+                        <li><a href="#troubleshooting" class="wiki-nav-link">Решение проблем</a></li>
+                        <li><a href="#api" class="wiki-nav-link">API</a></li>
+                        <li><a href="#faq" class="wiki-nav-link">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wiki-content">
+                <article id="install" class="wiki-article">
+                    <h3 class="wiki-article-title">📦 Установка Arichat Classic</h3>
+                    <p>Arichat Classic — это мод для Minecraft, который добавляет AI-функциональность прямо в игру.</p>
+
+                    <h4>Требования:</h4>
+                    <ul class="wiki-list">
+                        <li>Minecraft 1.12.2</li>
+                        <li>Forge</li>
+                        <li>Java 8+</li>
+                        <li>Mappet и другие зависимости</li>
+                        <li>Доступ в интернет или локальная модель</li>
+                    </ul>
+
+                    <h4>Шаги установки:</h4>
+                    <ol class="wiki-list">
+                        <li>Скачайте последнюю версию Arichat Classic со страницы релизов</li>
+                        <li>Поместите файл .jar в папку mods вашего клиента Minecraft</li>
+                        <li>Добавьте Mappet и другие необходимые моды McHorse</li>
+                        <li>Запустите Minecraft</li>
+                        <li>Настройте мод через меню</li>
+                    </ol>
+                </article>
+
+                <article id="config" class="wiki-article">
+                    <h3 class="wiki-article-title">⚙️ Настройка мода</h3>
+                    <p>Подробное руководство по конфигурации всех параметров Arichat Classic.</p>
+                </article>
+
+                <article id="usage" class="wiki-article">
+                    <h3 class="wiki-article-title">🥰️ Использование мода</h3>
+                    <p>Подробное руководство по использованию Arichat Classic.</p>
+                </article>
+
+                <article id="troubleshooting" class="wiki-article">
+                    <h3 class="wiki-article-title">troubleshooting</h3>
+                    <p>troubleshooting</p>
+                </article>
+
+                <article id="api" class="wiki-article">
+                    <h3 class="wiki-article-title">api</h3>
+                    <p>api</p>
+                </article>
+
+                <article id="faq" class="wiki-article">
+                    <h3 class="wiki-article-title">faq</h3>
+                    <p>faq</p>
+                </article>
+
+                <!-- Добавьте остальные статьи -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция загрузки -->
+
+<section id="download" class="download">
+    <div class="badge">Рекомендуется</div>
+
+    <div class="container">
+        <h2 class="section-title">Начать <span class="highlight">использовать</span></h2>
+        <p class="section-subtitle">Выберите вашу версию и начните погружение в мир AI-взаимодействий</p>
+
+        <div class="download-options">
+            <div class="download-card">
+
+            </div>
+
+            <div class="download-card highlight-card">
+                <h3 class="download-title">Latest Beta</h3>
+                <div class="download-version">try it now</div>
+                <ul class="download-features">
+                    <li>🚀 Новые функции</li>
+                    <li>🐛 Активная разработка</li>
+                    <li>📝 Экспериментальные возможности</li>
+                    <li>💬 Обратная связь</li>
                 </ul>
-            </li>
-            <li>Как работает автоматизация? При запуске клиента мод начинает скачивать вебдрайвер под ваш браузер, после чего он будет запущен. У вас откроется "чистый" браузер, вы можете пользоваться им как обычным, однако он полностью контролируется программой автоматизации. Переход на сайт, клики на кнопки, заполнение полей, получение данных с сайта. Важно то, что видимая нам оболочка браузера для программы не обязательна. Когда вы захотите перейти от разработки к тестированию, вам следует включить headless в конфиге мода, после чего перезапустить игру. Так взаимодействие программы и браузера будет невидимым для вас.</li>
-            <li>Хорошо, сейчас у нас есть простое понимание того, что делает Arichat. Представьте это так, будто вы работаете с браузером через игру.</li>
-        </ol>
+                <a href="https://modrinth.com/user/Evanechecssss" class="btn btn-secondary btn-block">Modrinth</a>
+                <a href="www.curseforge.com/members/evanechecssss" class="btn btn-secondary btn-block">Curseforge</a>
+            </div>
+        </div>
 
-        <p><strong>Отступление:</strong> в конфиге мода есть параметр <code>chatmod</code>, если он активен, то вы сможете взаимодействовать с персонажами через чат и команды. Однако изначально мод создавался для создателей Minecraft-карт, а значит, что предполагает, что работать вы с ним будете через скрипты. Примеры скриптов позже.</p>
+        <div class="github-link">
+            <p>Исходный код доступен на GitHub:</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" class="github-btn" target="_blank">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Посмотреть на GitHub
+            </a>
+        </div>
+    </div>
+</section>
 
-    </div>
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
 
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#download">Скачать</a></li>
+                        <li><a href="#wiki">Документация</a></li>
+                        <li><a href="https://discord.gg/qfxrqUF">Форум</a></li>
+                        <li><a href="https://t.me/ngm_offical">Блог</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="https://t.me/ngm_offical">Telegram</a></li>
+                        <li><a href="https://discord.gg/qfxrqUF">Discord</a></li>
+                        <li><a href="https://github.com/evanechecssss">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Проект</h4>
+                    <ul>
+                        <li><a href="#home">О проекте</a></li>
+                        <li><a href="https://ko-fi.com/evanechecssss">Внести вклад</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Arichat Classic. Все права защищены. Не аффилирован с Mojang или Microsoft.</p>
+            <p>Minecraft является товарным знаком Mojang AB</p>
+        </div>
     </div>
-    </div>
+</footer>
+
+<!-- Скрипты -->
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
