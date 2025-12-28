@@ -132,7 +132,163 @@ body::before {
     background-clip: text;
     position: relative;
 }
+/* Стили для таблицы макросов */
+.macros-table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
+.macros-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.macros-table thead {
+    background: linear-gradient(135deg, var(--primary-color), #3a86ff);
+}
+
+.macros-table th {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.macros-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.macros-table tbody tr:hover {
+    background-color: rgba(58, 134, 255, 0.1);
+}
+
+.macros-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.macros-table td {
+    padding: 1rem;
+    vertical-align: top;
+    color: var(--text-color);
+}
+
+.macros-table td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.macros-table td:nth-child(2) {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.macros-table td:last-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    word-break: break-all;
+}
+
+.macros-table code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+/* Пример кода */
+.code-example {
+    background: var(--code-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.code-example code {
+    color: #e9ecef;
+    background: transparent;
+}
+
+/* Блок с заметкой */
+.note {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    padding: 1.2rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+/* Альтернативный вариант с более яркими цветами */
+
+/* Фиолетовый для pattern */
+.macro-pattern {
+    background-color: rgba(147, 51, 234, 0.15);
+    border-left: 4px solid #9333ea;
+}
+
+/* Синий для JS */
+.macro-js {
+    background-color: rgba(59, 130, 246, 0.15);
+    border-left: 4px solid #3b82f6;
+}
+/* Анимация при наведении */
+.macro-pattern:hover {
+    background-color: rgba(147, 51, 234, 0.25);
+    transform: translateX(3px);
+}
+
+.macro-js:hover {
+    background-color: rgba(59, 130, 246, 0.25);
+    transform: translateX(3px);
+}
+
+.macro-random:hover {
+    background-color: rgba(34, 197, 94, 0.25);
+    transform: translateX(3px);
+}
+
+.macro-mps:hover {
+    background-color: rgba(245, 158, 11, 0.25);
+    transform: translateX(3px);
+}
+
+/* Общий переход для всех строк */
+.macros-table tbody tr {
+    transition: all 0.3s ease;
+}
+/* Зеленый для random */
+.macro-random {
+    background-color: rgba(34, 197, 94, 0.15);
+    border-left: 4px solid #22c55e;
+}
+
+/* Оранжевый для Mappet */
+.macro-mps {
+    background-color: rgba(245, 158, 11, 0.15);
+    border-left: 4px solid #f59e0b;
+}
+.note strong {
+    color: #ffc107;
+}
 .brand-text::after {
     content: 'Classic';
     position: absolute;
