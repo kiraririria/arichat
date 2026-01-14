@@ -1,7 +1,8 @@
 {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/arichatclassic",
     "1.12.2": {
-        "0.1": "This is public release update."
+        "0.1": "This is public release update.",
+        "0.1.2": "Minor bugs fixed"
     },
     "promos": {
         "1.12.2-latest": "0.1",
